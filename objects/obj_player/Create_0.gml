@@ -23,3 +23,5 @@ move_start_time = 0;
 MOVE_TIME = 0.2;
 
 player_health = 3;
+
+attempt = 0;

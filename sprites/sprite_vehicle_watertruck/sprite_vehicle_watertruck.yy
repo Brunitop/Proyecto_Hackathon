@@ -1,27 +1,27 @@
 {
   "$GMSprite":"",
-  "%Name":"sprite_player",
+  "%Name":"sprite_vehicle_watertruck",
   "bboxMode":0,
-  "bbox_bottom":63,
-  "bbox_left":16,
-  "bbox_right":47,
-  "bbox_top":0,
+  "bbox_bottom":167,
+  "bbox_left":13,
+  "bbox_right":251,
+  "bbox_top":26,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"639a74c8-0aeb-44d3-9a03-a714f10ed0fa","name":"639a74c8-0aeb-44d3-9a03-a714f10ed0fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2daeea78-c424-434e-a1a5-a5ed321e3518","name":"2daeea78-c424-434e-a1a5-a5ed321e3518","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":192,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"18648eb3-21d4-4668-9dd6-fd0ecbe7e031","blendMode":0,"displayName":"default","isLocked":false,"name":"18648eb3-21d4-4668-9dd6-fd0ecbe7e031","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a8065b87-a7f5-40e2-a16b-a6b3cda9f7d1","blendMode":0,"displayName":"default","isLocked":false,"name":"a8065b87-a7f5-40e2-a16b-a6b3cda9f7d1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sprite_player",
+  "name":"sprite_vehicle_watertruck",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sprite_player",
+    "%Name":"sprite_vehicle_watertruck",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sprite_player",
+    "name":"sprite_vehicle_watertruck",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"639a74c8-0aeb-44d3-9a03-a714f10ed0fa","path":"sprites/sprite_player/sprite_player.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"08ca7c5a-316c-493c-a5e3-f90eb2f13e4c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2daeea78-c424-434e-a1a5-a5ed321e3518","path":"sprites/sprite_vehicle_watertruck/sprite_vehicle_watertruck.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"99fb2690-8159-45d5-b117-a1306d3b383d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":256,
 }

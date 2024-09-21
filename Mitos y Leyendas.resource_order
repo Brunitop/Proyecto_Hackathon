@@ -25,6 +25,7 @@
     {"name":"obj_vehicle_classic","order":8,"path":"objects/obj_vehicle_classic/obj_vehicle_classic.yy",},
     {"name":"obj_vehicle_pickup","order":6,"path":"objects/obj_vehicle_pickup/obj_vehicle_pickup.yy",},
     {"name":"obj_vehicle_rv","order":5,"path":"objects/obj_vehicle_rv/obj_vehicle_rv.yy",},
+    {"name":"obj_vehicle_watertruck","order":9,"path":"objects/obj_vehicle_watertruck/obj_vehicle_watertruck.yy",},
     {"name":"sprite_attack_effect","order":4,"path":"sprites/sprite_attack_effect/sprite_attack_effect.yy",},
     {"name":"sprite_background_sand","order":2,"path":"sprites/sprite_background_sand/sprite_background_sand.yy",},
     {"name":"sprite_node","order":3,"path":"sprites/sprite_node/sprite_node.yy",},
@@ -33,5 +34,6 @@
     {"name":"sprite_vehicle_classic","order":8,"path":"sprites/sprite_vehicle_classic/sprite_vehicle_classic.yy",},
     {"name":"sprite_vehicle_pickup","order":6,"path":"sprites/sprite_vehicle_pickup/sprite_vehicle_pickup.yy",},
     {"name":"sprite_vehicle_rv","order":5,"path":"sprites/sprite_vehicle_rv/sprite_vehicle_rv.yy",},
+    {"name":"sprite_vehicle_watertruck","order":9,"path":"sprites/sprite_vehicle_watertruck/sprite_vehicle_watertruck.yy",},
   ],
 }

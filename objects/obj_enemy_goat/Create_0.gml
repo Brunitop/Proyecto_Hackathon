@@ -20,6 +20,11 @@ MOVE_TIME = 0.20;  // Slightly faster than the player (player's MOVE_TIME is 0.2
 // Timing for movement
 move_start_time = 0;
 
+attempt = 0;
+
+//health
+enemy_health = 3;
+
 //node and patrol area
 node_count = instance_number(obj_node);
 node_timer = 0;
@@ -42,6 +47,3 @@ target_y_pixel = 0;
 //state, either "patrolling" or "resting"
 rest_time = 10; // Set rest duration
 state = "resting";
-
-//health
-enemy_health = 3;
