@@ -1,16 +1,16 @@
 // obj_player - Step event (extended)
 
 if (is_moving) {
-    var timer = (current_time - move_start_time) / 1000;
-    var progress = timer / MOVE_TIME;
+
+    var progress = global.global_tick / global.tick_time;
 
 	// Check if the target tile is occupied by another entity
     var occupant = ds_grid_get(global.occupancy_grid, target_x, target_y);
 	attempt = ds_grid_get(global.attempt_grid, target_x, target_y);
 	
-	show_debug_message("Occupant: " + string(occupant));
-	show_debug_message("Attempt: " + string(attempt));
-	show_debug_message("ID: " + string(id));
+	//show_debug_message("Occupant: " + string(occupant));
+	//show_debug_message("Attempt: " + string(attempt));
+	//show_debug_message("Attempt: " + string(id));
 	
     if (occupant == 0 && attempt == 1) {
 		if (progress >= 1) {
@@ -25,23 +25,24 @@ if (is_moving) {
 	        is_moving = false;
 	        move_x = 0;
 	        move_y = 0; 
-			ds_grid_set(global.attempt_grid, xpos, ypos, 0); // Mark the attempt as finished
-	    } else {
-			//Movement in progress
-	        // Smooth movement calculation
-	        x = lerp(x, target_x_pixel, progress);
-	        y = lerp(y, target_y_pixel, progress);
+			ds_grid_set(global.attempt_grid, xpos, ypos, 0); // Mark the attempt as finished		
+		} else {
+	        // Movement in progress - Smooth interpolation
+            // Movement in progress - Smooth interpolation
+			x = lerp(x, target_x_pixel, progress);
+			y = lerp(y, target_y_pixel, progress);
 	    }
+
 	} else{
 		// Finish attempt even if the attempt is unsuccesful
-		ds_grid_set(global.attempt_grid, target_x, target_y, 0); // Mark the attempt as finished
+		ds_grid_set(global.attempt_grid, xpos, ypos, 0); // Mark the attempt as finished
 		is_moving = false;
 	}
 	//end of portion for is_moving = true
 } else {
 	
 	// Check for tick and whether the enemy is currently moving
-	if (global.global_tick == 1) {
+	if (global.global_tick > 1) {
 		// Check for WASD input and set movement direction
 	    if (keyboard_check(vk_right)) {
 	        move_x = 1;
@@ -77,8 +78,7 @@ if (is_moving) {
 	        target_x_pixel = target_x * global.TILE_SIZE;
 	        target_y_pixel = target_y * global.TILE_SIZE;
 
-	        // Set start time for the movement
-	        move_start_time = current_time;
+			distance_to_target = point_distance(x, y, target_x_pixel, target_y_pixel);
 			
 			// Set number of attempts
 			attempt = ds_grid_get(global.attempt_grid, target_x, target_y);
